@@ -1,0 +1,6 @@
+{
+  "appId": "com.example.solocfo",
+  "appName": "SoloCFO",
+  "webDir": "web",
+  "bundledWebRuntime": false
+}

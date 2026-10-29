@@ -1,0 +1,27 @@
+SOLOCFO 3.0 – DIREKT AUSPROBIEREN
+
+1. Öffne im Ordner „dist“ die Datei „SoloCFO_v3_Offline.html“ mit einem
+   aktuellen Browser. Kein Benutzerkonto oder API-Schlüssel nötig.
+
+2. Im Cockpit siehst du einen fiktiven Baubetrieb. Unter „Unternehmenswert“
+   findest du die DCF-Bewertung, unter „Stundensatz“ die Team-/Kostenplanung.
+
+3. Verändere z. B. die Verrechenbarkeit oder den WACC. Nach Verlassen
+   des Eingabefelds werden die Ergebnisse neu berechnet.
+
+4. Unter „Szenarien“ kannst du Alternativen benennen und speichern.
+   Im „Maßnahmenplan“ vergleichst du Ergebnis- und Cashflow-Wirkung.
+
+5. Unter „Bericht“ kannst du eine PDF über die Druckfunktion speichern.
+   DCF-/Stundenrechnung haben einen CSV-Export. JSON-Datensicherung
+   findest du unter „Daten & Import“.
+
+Falls dein Browser die Dateispeicherung einschränkt, starte aus dem
+Projektordner „npm run dev“ und nutze die lokal bereitgestellte Web-App.
+Ausführliche Entwicklungs-, Test- und Rechenanleitung: README.md.
+
+Dies ist eine weiterentwickelte lokale Testversion. Sie wurde nicht als
+SaaS oder im App Store veröffentlicht. Bewertungen und Stundensätze sind
+Modellrechnungen mit eigenen Annahmen, keine fachlich freigegebenen
+Gutachten. Vertrauliche Mandantendaten erst nach Ausbau und Prüfung der
+Sicherheitsarchitektur verwenden.

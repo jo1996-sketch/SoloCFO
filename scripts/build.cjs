@@ -1,0 +1,11 @@
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+let html=fs.readFileSync(path.join(root,'web/index.html'),'utf8');
+html=html.replace(/<link rel="stylesheet" href="([^"]+)">/g,(_,file)=>'<style>'+fs.readFileSync(path.join(root,'web',file),'utf8')+'</style>');
+html=html.replace(/<script src="([^"]+)"><\/script>/g,(_,file)=>'<script>'+fs.readFileSync(path.join(root,'web',file),'utf8').replace(/<\/script/gi,'<\\/script')+'</script>');
+html=html.replace(/<link rel="(?:manifest|apple-touch-icon|icon)"[^>]*>/g,'');
+html=html.replace('</head>','<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,'+encodeURIComponent(fs.readFileSync(path.join(root,'web/assets/favicon.svg'),'utf8'))+'"></head>');
+const target=path.join(root,'dist/SoloCFO_v3_Offline.html');
+fs.mkdirSync(path.dirname(target),{recursive:true});fs.writeFileSync(target,html);
+console.log('Offline-App erstellt: '+path.relative(root,target));

@@ -1,0 +1,21 @@
+{
+  "name": "solocfo-mvp",
+  "version": "3.0.0",
+  "private": true,
+  "description": "SoloCFO local-first finance workspace with DCF valuation and detailed hourly costing",
+  "scripts": {
+    "test": "node test-engine.cjs && node tests/models.test.cjs",
+    "dev": "python3 -m http.server 8080 --directory web",
+    "cap:sync": "cap sync",
+    "cap:open:ios": "cap open ios",
+    "build": "node scripts/build.cjs",
+    "test:browser": "python3 tests/browser_check.py"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
