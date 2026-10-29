@@ -2,6 +2,19 @@
 
 Weiterentwicklung des mitgelieferten MVP 2.0: eine deutschsprachige, lokal arbeitende Web-App mit DCF-Unternehmensbewertung, detaillierter Stundensatzplanung und Unternehmensszenarien. **Entwicklungsstand zum Erproben, kein freigegebenes Finanzprodukt.**
 
+## Demo herunterladen
+
+SoloCFO 3.0 gibt es ohne Installation als fertigen Download:
+
+- **[ZIP mit App und Kurzanleitung herunterladen](https://github.com/jo1996-sketch/SoloCFO/raw/refs/heads/main/downloads/SoloCFO_v3_Demo.zip)**
+- **[Einzelne HTML-Datei herunterladen](https://github.com/jo1996-sketch/SoloCFO/raw/refs/heads/main/downloads/SoloCFO_v3_Offline.html)**
+
+Die HTML-Datei herunterladen und anschließend `SoloCFO_v3_Offline.html` am Computer per Doppelklick in einem aktuellen Browser öffnen. Beim ZIP zuerst die Dateien entpacken und dann die enthaltene HTML-Datei öffnen. Kein Benutzerkonto oder API-Schlüssel nötig.
+
+Bei einem privaten Repository musst du auf GitHub mit einem berechtigten Konto angemeldet sein. Auf iPhone/iPad kann die Dateivorschau das Ausführen der App verhindern. Die Links laden die lokale App herunter; sie öffnen keine gehostete Web-App. Die Demo startet mit fiktiven Daten.
+
+`downloads/` enthält fertige Download-Kopien dieser Version. Nach Änderungen an der App mit `npm run package:downloads` aktualisieren.
+
 ![SoloCFO 3.0 – Cockpit mit fiktiven Unternehmensdaten](docs/vorschau.png)
 
 ## Direkt ausprobieren

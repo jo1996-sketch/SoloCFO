@@ -9,6 +9,7 @@
     "cap:sync": "cap sync",
     "cap:open:ios": "cap open ios",
     "build": "node scripts/build.cjs",
+    "package:downloads": "python3 scripts/package-downloads.py",
     "test:browser": "python3 tests/browser_check.py"
   },
   "dependencies": {
